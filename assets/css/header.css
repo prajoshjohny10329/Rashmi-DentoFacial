@@ -380,7 +380,7 @@
   color: var(--primaryColor);
 }
 .responsive-navbar .offcanvas-header .logo {
-  max-width: 120px;
+  max-width: 225px;
 }
 .responsive-navbar .offcanvas-body {
   padding: 30px 22px;
