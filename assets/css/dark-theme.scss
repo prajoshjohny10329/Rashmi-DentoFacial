@@ -1,0 +1,676 @@
+/*-------------------------------
+    Dark Theme  CSS
+-------------------------------*/
+:root {
+    --aztechColor:#111828;
+    --codColor: #111;
+    --mildColor: #333;
+    --darkColor: #000;
+}
+.switch-theme-mode{
+    position: fixed;
+    top: 200px;
+    right: 15px;
+    z-index: 99;
+}
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    &.round {
+        border-radius: 50%;
+        &:before{
+            border-radius: 50%;
+        }
+    }
+    &:before {
+        position: absolute;
+        content: "";
+        height: 35px;
+        width: 35px;
+        left: 0px;
+        bottom: 4px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        box-shadow: 0 0px 15px #2020203d;
+        background: white url('../img/sunny.webp');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color:var(--aztechColor);
+        background-size: 17px;
+    }
+}
+.navbar-area .navbar,
+input:checked + .slider {
+  background-color: transparent;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px  transparent;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  background: white url('../img/night.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
+
+}
+/*---------------------------------
+    Color CSS For Elements 
+-----------------------------------*/
+.theme-light {
+    .navbar-brand{
+        .logo-dark{
+            display: none!important;
+        }
+        .logo-light{
+            display: block!important;
+        }
+    }
+    .footer-logo{
+        .logo-dark{
+            display: none!important;
+        }
+        .logo-light{
+            display: block!important;
+        }
+    }
+    .logo{
+        .logo-dark{
+            display: none!important;
+        }
+        .logo-light{
+            display: block!important;
+        }
+    }
+}
+.theme-dark {
+    .navbar-brand{
+        .logo-light{
+            display: none!important;
+        }
+        .logo-dark{
+            display: block!important;
+        }
+    }
+    .footer-logo{
+        .logo-dark{
+            display: block!important;
+        }
+        .logo-light{
+            display: none!important;
+        }
+    }
+    .logo{
+        .logo-dark{
+            display: block!important;
+        }
+        .logo-light{
+            display: none!important;
+        }
+    }
+    .bg_ash,
+    .bg_two,
+    .pricing-card,
+    .navbar-area.header-one.sticky,
+    .navbar-area.header-three.sticky,
+    .navbar-area.header-two.sticky,
+    .navbar-area.header-three,
+    .breadcrumb-wrap,
+    .footer-wrap,
+    .appointment-wrap .appointment-box,
+     .searchModal .modal-dialog,
+     .navbar-area.sticky,
+     .about-wrap.style-three .about-img-wrap .promo-box,
+     .section-subtitle,
+     .testimonial-card.style-three,
+     .process-wrap .process-img-wrap .promo-box,
+     .testimonial-card.style-one .client-quote,
+     .blog-card.style-one .blog-card-info,
+     .blog-card.style-two .blog-card-info,
+     .testimonial-card.style-two,
+     .team-wrap .team-card-wrap,
+     .service-card.style-two,
+     .service-card.style-three,
+     .service-card.style-four,
+     .hero-form-wrap,
+     .single-team-widget,
+     .wh-wrap.style-three .wh-content .feature-list .feature-item,
+    .counter-wrap.style-two .counter-bg,
+    .counter-wrap.style-three .counter-bg,
+    .counter-wrap.style-four .counter-bg,
+    .contact-widget .contact-info,
+    .contact-widget .contact-info::before,
+     .hero-wrap.style-one .hero-content .hero-form,
+     .about-wrap.style-one .about-img-wrap .promo-box.style-one,
+     .about-wrap.style-one .about-img-wrap .promo-box.style-two,
+     .hero-wrap.style-one .hero-img-wrap .hero-promo-box,
+     .blog-card.style-three .blog-card-info{
+        background-color: var(--codColor);
+    }
+    body,
+    .td_dark,
+    .responsive-navbar,
+    .breadcrumb-wrap::after,
+    .cta-wrap.style-three::after,
+    .contact-widget .contact-info::after,
+    .footer-wrap .footer-bottom .copyright-text,
+    .bg-white{
+        background-color: var(--darkColor)!important;
+    }
+    .bg_gray,
+    .navbar-area.style-one,
+    .team-card.style-two,
+    .service-wrap.style-one .service-box-wrap{
+        background-color: var(--mildColor);
+    }
+    .simple-wrap.style-two .simple-content .feature-item-wrap .feature-item .feature-icon{
+        background-color: rgba(255, 255, 255, 0.18);
+    }
+    .td_aztec,
+    .bg_four,
+    .bg_optional,
+    .searchModal .modal-dialog,
+    .newsletter-wrap.style-one::after,
+    .service-wrap.style-one::after,
+    .hero-form-wrap .hero-form,
+    .counter-wrap.style-three::after,
+    .modal-dialog-scrollable .modal-content,
+    .newsletter-wrap.style-three::after,
+    .navbar-area.style-three .navbar,
+    .navbar-area.style-three .navbar,
+    .navbar-area.style-three.sticky,
+    .navbar-area.style-three::after,
+    .team-card.style-two .team-img .social-profile,
+    .wh-wrap.style-two .wh-img-wrap .circle-wrap,
+    .testimonial-card.style-two .rating,
+    .blog-card.style-two .blog-card-info .blog-date,
+    .blog-card.style-three .blog-card-info .blog-date,
+    .about-wrap.style-two .about-img-wrap .promo-box,
+    .accordion-item .accordion-header .accordion-button,
+    .team-card.style-three .team-img .social-profile,
+    .navbar-area .navbar .navbar-nav .nav-item .dropdown-menu{
+        background-color: var(--aztechColor)!important;
+    }
+    .bg_dark{
+        background-color: var(--mildColor);
+        &:hover{
+            background-color: var(--aztechColor);
+        }
+    }
+    .counter-wrap.style-three .counter-bg,
+    .counter-wrap.style-four .counter-bg,
+    .counter-wrap.style-two .counter-bg{
+       background-image: none;
+    }
+    .service-card.style-three .service-info .service-card-shape,
+    .appointment-wrap.style-three .appointment-shape-one,
+    .testimonial-wrap.style-two .testimonial-bg-shape,
+    .counter-wrap.style-one .counter-shape,
+    .testimonial-card.style-one .client-quote .quote-icon,
+    .testimonial-wrap.style-one .testimonial-bg-shape{
+        opacity: 0.1;
+    }
+    .footer-wrap .footer-bottom::after {
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+    .contact-us-wrap #contactForm{
+        background-color: transparent!important;
+    }
+    article .feature-list li, .service-details-wrap .feature-list li, .team-details-wrap .feature-list li, .terms-wrap .feature-list li,
+    .hero-form-wrap .contact-item-wrap .contact-item p, .hero-form-wrap .contact-item-wrap .contact-item a,
+    .navbar-area .header-top .contact-info li,
+    .navbar-area .header-top .contact-info li a,
+    .pricing-card .pricing-features li,
+    .search-btn i,
+    .searchModal .modal-dialog .modal-content .btn-close i,
+    .responsive-navbar .offcanvas-body .contact-info li p, .responsive-navbar .offcanvas-body .contact-info li a{
+        color: var(--offwhiteColor);
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    h3 a,
+    .accordion-item .accordion-header .accordion-button,
+    .wh-wrap.style-one .wh-content .feature-list li,
+    .appointment-wrap .appointment-box .appointment-form .form-group label,
+    .appointment-wrap .appointment-box .appointment-form .form-group select,
+    .appointment-wrap .appointment-box .appointment-form .form-group i,
+    .counter-card-wrap .counter-card .counter-text span,
+    .progressbar-wrap .progress-item .progress-title p,
+    .progressbar-wrap .progress-item .progress-title span,
+    .navbar-area .header-top p span,
+    .slider-btn .prev-btn i,
+    .slider-btn .next-btn i,
+    .navbar-area .navbar .others-option .option-item .search-btn i,
+    .header-wrap.header-two .navbar .navbar-nav .nav-item a,
+    .header-wrap.header-three .header-bottom .navbar .navbar-nav .nav-item a,
+    .header-wrap.header-four .header-bottom .navbar .navbar-nav .nav-item a,
+    .responsive-navbar .offcanvas-header .close-btn,
+    .navbar-area .navbar .others-option .option-item .sidebar-toggler i,
+    .navbar-area .navbar .others-option .option-item .contact-item a,
+    .hero-wrap.style-one .hero-content .hero-form .form-group label,
+    .hero-wrap.style-one .hero-img-wrap .hero-promo-box .hero-promo-text span,
+    .responsive-navbar .offcanvas-body .accordion .accordion-item .accordion-link,
+    article p strong, article p b, .terms-wrap p strong, .terms-wrap p b{
+        color: var(--whiteColor);
+    }
+    .service-card.style-one h3 a, .service-card.style-four h3 a,
+    .team-card.style-one .team-info h3 a,
+    .team-card.style-one .team-info span,
+    .team-card.style-two .team-info h3 a,
+    .link-one,
+    .sidebar .sidebar-widget .contact-info li p,
+    .sidebar .sidebar-widget .contact-info li a,
+    .team-card.style-three .team-info h3 a,
+    .service-card.style-two h3 a,
+    .navbar-area .navbar .navbar-nav .nav-item .nav-link,
+    .navbar-area .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .nav-link,
+    .blog-card .blog-card-info h3 a,
+    .reply-btn{
+        color: var(--whiteColor);
+        &:hover,
+        &.active{
+            color: var(--primaryColor);
+        }
+    }
+    p,span,
+    .contact-item-wrap .contact-item .contact-info a, 
+    .contact-item-wrap .contact-item .contact-info p,
+    .checkbox label,
+    .content-feature-list li,
+    .breadcrumb-content .breadcrumb-menu li:last-child,
+    .responsive-navbar .offcanvas-body .contact-info li p,
+    .responsive-navbar .offcanvas-body .contact-info li a,
+    article ol li, .service-details-wrap ol li, .project-details-wrap ol li, .terms-wrap ol li,
+    .content-feature-list li,
+    .btn-three,
+    .blog-card .blog-metainfo li,
+    .blog-card .blog-metainfo li a,
+    .contact-item .contact-info p{
+        color: var(--offwhiteColor);
+    }
+    .progressbar-wrap .progress-item .progress-title span,
+    .about-wrap.style-one .about-img-wrap .promo-box.style-two h5,
+    .about-wrap.style-two .about-img-wrap .promo-box.style-two h5{
+        color: var(--primaryColor);
+    }
+    .navbar-area .navbar .navbar-nav .nav-item .dropdown-menu{
+        box-shadow: none!important;
+    }
+    .btn-three{
+        color: var(--titleColor);
+        &:hover{
+            color: var(--whiteColor);
+        }
+    }
+    .tag-list,
+    .post-tag{
+        li{
+            a{
+                background-color: transparent;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                color: var(--whiteColor);
+                &:hover{
+                    background-color: var(--secondaryColor);
+                    color: var(--whiteColor);
+                }
+            }
+        }
+    }
+    article{
+        .blog-metainfo{
+            li{
+                color: var(--whiteColor);
+                a{
+                    color: var(--whiteColor);
+
+                }
+            }
+        }
+    }
+    .wh-wrap.style-two .wh-img-wrap .circle-wrap .circle-text svg{
+        fill: var(--whiteColor);
+    }
+    .hero-wrap.style-one .hero-shape-one {
+        filter: brightness(0.3) invert(0);
+    }
+    .newsletter-wrap.style-one .newsletter-box,
+    .newsletter-wrap.style-two .newsletter-box,
+    .newsletter-wrap.style-three .newsletter-box,
+    .newsletter-wrap.style-four .newsletter-box,
+    .cta-wrap.style-one,
+    .footer-wrap .footer-top{
+        position: relative;
+        z-index: 1;
+        &:after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            z-index: -2;
+        }
+    }
+    .hero-wrap.style-two{
+        .hero-shape-one{
+            opacity: 0.4;
+        }
+        &:after{
+            background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.04243704317664565) 88%);
+        }
+    }
+    .footer-wrap{
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .team-card.style-one{
+        background-color: var(--titleColor);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        &:after {
+            background: linear-gradient(0deg, rgb(0, 0, 0) 45%, rgba(0, 0, 0, 0.1) 88%);
+        }
+    }
+    .newsletter-wrap.style-one .newsletter-box form button,
+    .newsletter-wrap.style-four .newsletter-box form button{
+        background-color: var(--primaryColor);
+    }
+    .cta-team-wrap:after,
+    .hero-wrap.style-three .hero-bg:after,
+    .appointment-wrap.style-one .appointment-bg:after,
+    .appointment-wrap.style-two .appointment-bg:after,
+    .appointment-wrap.style-three .appointment-bg:after,
+    .breadcrumb-wrap::before{
+        opacity: 1;
+        background-color: rgba(0,0,0,0.8);
+    }
+    #before_after::before {
+        filter: brightness(1) invert(1);
+    }
+    .link-one,
+    .link-two,
+    article .blog-author a,
+    .post-tag ul li a,
+    .navbar-area .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .dropdown-menu .nav-item .nav-link,
+    .pp-post-item .pp-post-info h6 a,
+    .pp-post-item .pp-post-info > a,
+    .navbar-area.header-one .container .header-top .others-option .option-item .social-profile li a i, .navbar-area.header-two .container .header-top .others-option .option-item .social-profile li a i,
+    .checkbox label a,
+    .navbar-area.sticky.header-one .navbar .others-option .option-item .search-btn i,
+    .navbar-area.sticky.header-one .navbar .others-option .option-item .shopcart i,
+    .navbar-area.header-one .navbar .navbar-nav .nav-item .nav-link,
+    .navbar-area.header-two .navbar .navbar-nav .nav-item .nav-link,
+    .navbar-area.header-three .navbar .navbar-nav .nav-item .nav-link,
+    .navbar-area.header-four .navbar .navbar-nav .nav-item .nav-link,
+    .service-card.style-three .service-info h3 a,
+    .breadcrumb-content .breadcrumb-menu li a{
+        color: var(--whiteColor);
+        &:hover,
+        &.active{
+            color: var(--primaryColor);
+        }
+    }
+    .contact-item-wrap .contact-item .contact-icon,
+    .wp-block-quote h6::before,
+    .navbar-area .header-top .social-profile li::after {
+        background-color: rgba(255, 255, 255, 0.15);
+        &:hover{
+            background-color: var(--secondaryColor);
+        }
+    }
+    .responsive-navbar {
+        .offcanvas-body {
+            .accordion {
+                .accordion-item {
+                    .accordion-button{
+                        color: var(--whiteColor);
+                        &.active{
+                            color: var(--primaryColor);
+                        }
+                    }
+                    .accordion-collapse {
+                        .accordion-body {
+                            background-color: transparent;
+                            .accordion-item {
+                                .accordion-link {
+                                    color: var(--whiteColor);
+                                    &.active{
+                                        color: var(--primaryColor);
+                                    }
+                                }
+                                .accordion-collapse {
+                                    .accordion-body {
+                                        background-color: transparent;
+                                        .accordion-item {
+                                            .accordion-link {
+                                                color: var(--whiteColor);
+                                                &.active{
+                                                    color: var(--primaryColor);
+                                                }
+                                            }
+                                        }
+                                        .accordion-button {
+                                            color: var(--whiteColor);
+                                            &.active{
+                                                color: var(--primaryColor);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .accordion-button {
+                                color: var(--whiteColor);
+                                &.active{
+                                    color: var(--primaryColor);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .navbar-area .navbar .navbar-toggler .burger-menu span {
+        background: var(--whiteColor);
+    }
+    .breadcrumb-menu li a,
+    .post-meta-option .post-tag span, .post-meta-option .post-share span,
+    .login-wrap .login-content .or-text,
+    .navbar-area.header-two .navbar .others-option .option-item .shopcart i,
+    .navbar-area.header-three .navbar .others-option .option-item .shopcart i,
+    .navbar-area.header-four .navbar .others-option .option-item .shopcart i,
+    .navbar-area.header-two .header-top .social-profile li a i,
+    .offcanvas-contact-info h4{
+        color: var(--whiteColor);
+    }
+    .hero-form-wrap .contact-item-wrap .contact-item:after,
+    .navbar-area .navbar .others-option .option-item::before ,
+    .service-card.style-one .service-icon::after, .service-card.style-four .service-icon::after,
+    .service-card.style-two .service-icon::after, .service-card.style-three .service-icon::after,
+    .navbar-area .header-top .contact-info li::after,
+    .navbar-area.header-one .container .navbar-brand::after, .navbar-area.header-two .container .navbar-brand::after{
+        background-color: rgba(255, 255, 255, 0.18);
+    }
+    .sidebar{
+        .sidebar-widget-two{
+            border: none;
+        }
+    }
+    article,
+    .responsive-navbar .offcanvas-header,
+    .responsive-navbar .offcanvas-body .offcanvas-contact-info,
+    .responsive-navbar .offcanvas-body .others-option,
+    .navbar-area.header-two, .navbar-area.header-three,
+    .navbar-area.header-two, .navbar-area.header-four,
+    .comment-item-wrap .comment-item,
+    .navbar-area .header-top,
+    .post-meta-option,
+    .contact-item,
+    .navbar-area.header-three .navbar,
+    .navbar-area.header-four .navbar,
+    .navbar-area.header-four .navbar,
+    .counter-wrap.style-one,
+    .section-title.style-one > span,
+    .content-title.style-one > span,
+    .service-card.style-one,
+    .service-card.style-four,
+    .team-card.style-one .team-info .social-profile li a,
+    .hero-wrap.style-one .hero-content > span,
+    .wh-wrap.style-one .wh-content .feature-list,
+    .team-card.style-two .team-img .social-profile li a,
+    .wh-wrap.style-two .wh-img-wrap .circle-wrap .circle-text:before,
+    .navbar-area .navbar .others-option .option-item .user-login, 
+    .navbar-area .navbar .others-option .option-item .search-btn,
+    .blog-card.style-two .blog-card-info .blog-date,
+    .blog-card.style-three .blog-card-info .blog-date,
+    .post-share ul li a,
+    .about-wrap.style-two .about-content .feature-item,
+    .team-card.style-three .team-img .social-profile li a,
+    .navbar-area.header-two .header-top{
+        border-color: rgba(255,255,255,0.25)!important;
+    }
+    .appointment-wrap .appointment-box .appointment-form .form-group select,
+    #contactForm .form-group select{
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        color: var(--whiteColor);
+        option{
+            color: var(--titleColor);
+        }
+    }
+    #cmt-form,
+    #contactForm,
+    .comment-item-wrap .comment-item {
+        box-shadow: none;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .search-btn img,
+    .slider-btn .prev-btn img,
+    .slider-btn .next-btn img,
+    .navbar-area.header-two .navbar .sidebar-toggler img{
+        filter: brightness(0) invert(1);
+    }
+    .navbar-area .navbar .others-option .option-item .user-login i,
+    .navbar-area .navbar .others-option .option-item .search-btn i,
+    .comment-item-wrap .comment-item .comment-author-wrap .comment-author-name .comment-date{
+        color: var(--offwhiteColor);
+    }
+    .navbar-area .navbar .others-option .option-item .sidebar-toggler img {
+       filter: brightness(0) invert(1);
+    }
+    .about-wrap.style-two .about-content .feature-item span,
+    .wp-block-quote,
+    .btn-three,
+    .sidebar-widget{
+        background-color: transparent;
+        box-shadow: none;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        color: var(--whiteColor);
+    }
+    input,textarea,
+    .searchModal .modal-dialog .modal-content form .form-control,
+    #cmt-form .comment-form .form-group input,
+    #cmt-form .comment-form .form-group textarea,
+    .newsletter-form input,
+    #contactForm .form-group input,
+    #contactForm .form-group textarea{
+        background-color: transparent!important;
+        border: 1px solid rgba(255, 255, 255, 0.2)!important;
+        color: var(--whiteColor)!important;
+        &::placeholder{
+            color: var(--whiteColor);
+            opacity: 0.8;
+        }
+        
+    }
+    .checkout-form .form-group label{
+        color: var(--offwhiteColor);
+    }
+    .sidebar .sidebar-widget .social-profile li a,
+    .responsive-navbar .offcanvas-body .social-profile li a,
+    .page-nav li a{
+        background-color:transparent;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: var(--whiteColor);
+        i{
+            color: var(--whiteColor);
+        }
+        img{
+            filter: brightness(0) invert(1);
+        }
+        &:hover,
+        &.active{
+            border-color: transparent;
+            background-color:var(--primaryColor);
+        }
+    }
+    .search-box .form-group input{
+        background-color: var(--blackColor);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: var(--whiteColor);
+        &::placeholder{
+            color: var(--whiteColor);
+        }
+    }
+    select{
+        background-image: url(../img/down-arrow-white.webp);
+    }
+    .slider-btn .prev-btn,
+    .slider-btn .next-btn,
+    .category-box.list-style li a,
+    .feature-card span{
+        background: transparent!important;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: var(--whiteColor);
+        i{
+            color: var(--whiteColor);
+        }
+        &:hover{
+            background-color: var(--primaryColor)!important;
+            border-color: transparent;
+        }
+    }
+    .sidebar .sidebar-widget .progressbar-wrap .progress-item .progress,
+    .progressbar-wrap .progress-item .progress{
+        background-color: rgba(255, 255, 255, 0.18);
+    }
+}
+@media only screen and (max-width:991px) {
+    .switch-theme-mode {
+        top: 270px;
+    }
+}
+@media only screen and (min-width:992px) {
+    .theme-dark{
+        .header-wrap .navbar .navbar-nav .nav-item .dropdown-menu{
+            background-color:var(--codColor);
+        }
+    }
+}
