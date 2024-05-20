@@ -5538,3 +5538,12 @@ article {
     width: 12px;
   }
 }/*# sourceMappingURL=style.css.map */
+
+/* review */
+
+.review-p{
+  max-height: 184px;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
