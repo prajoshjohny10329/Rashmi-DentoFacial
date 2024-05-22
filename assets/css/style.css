@@ -5549,6 +5549,6 @@ article {
 }
 
 .white-hover:hover{
-  color: #fff !important;
+  color: var(--primaryColor) !important;
   font-size: large ;
 }
