@@ -5177,6 +5177,7 @@ article {
   position: relative;
   z-index: 1;
   text-align: center;
+  height: 260px;
 }
 .contact-card .contact-shape {
   position: absolute;
