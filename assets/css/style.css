@@ -5559,3 +5559,12 @@ article {
 .index-review-p{
   min-height: 150px;
 }
+.footer-top-s{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.btn-two-footer{
+  background-color: black;
+  margin-top: 30px;
+}

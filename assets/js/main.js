@@ -187,7 +187,7 @@
                     if (parseInt(counter.innerText) >= target) {
                     clearInterval(timer);
                     }
-                }, 10);
+                }, 20);
                 counterObserver.unobserve(counter);
                 }
             });
