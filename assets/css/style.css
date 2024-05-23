@@ -5556,3 +5556,6 @@ article {
 .blue-hover:hover{
   color: var(--whiteColor) !important;
 }
+.index-review-p{
+  min-height: 150px;
+}
