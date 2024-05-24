@@ -5551,7 +5551,6 @@ article {
 
 .white-hover:hover{
   color: var(--primaryColor) !important;
-  font-size: large ;
 }
 .blue-hover:hover{
   color: var(--whiteColor) !important;
