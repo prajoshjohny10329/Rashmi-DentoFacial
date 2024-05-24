@@ -82,7 +82,7 @@
                     <div class="collapse navbar-collapse">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a href="index.html" class="nav-link active">
+                                <a href="index.html" class="nav-link ">
                                     Home
                                 </a>
                             </li>
@@ -92,12 +92,12 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="javascript:void(0)" class=" nav-link">
+                                <a href="javascript:void(0)" class=" nav-link active">
                                     Dentists
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="dentists.html" class="nav-link">
+                                        <a href="dentists.html" class="nav-link active">
                                             All Dentists 
                                         </a>
                                     </li>
@@ -163,7 +163,7 @@
             <div class="offcanvas-body">
                 <div class="accordion" id="navbarAccordion">
                     <div class="accordion-item">
-                        <a class="accordion-button without-icon active" href="index.html">
+                        <a class="accordion-button without-icon  " href="index.html">
                             Home
                         </a>
                     </div>
@@ -173,14 +173,14 @@
                         </a>
                     </div>
                     <div class="accordion-item">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="accordion-button collapsed active" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             Dentists
                         </button>
                         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
                             <div class="accordion-body">
                                 <div class="accordion" id="navbarAccordion30">
                                     <div class="accordion-item">
-                                        <a href="dentists.html" class="accordion-link">
+                                        <a href="dentists.html" class="accordion-link active">
                                             All Dentists
                                         </a>
                                     </div>
@@ -483,13 +483,6 @@
                         </div>
                     </div>
                 </div>
-                <ul class="page-nav list-style text-center mt-40">
-                    <li><a href="dentists.html"><img src="assets/img/left-arrow-2.svg" alt="Image"></a></li>
-                    <li><a class="active" href="dentists.html">01</a></li>
-                    <li><a href="dentists.html">02</a></li>
-                    <li><a href="dentists.html">03</a></li>
-                    <li><a href="dentists.html"><img src="assets/img/right-arrow-2.svg" alt="Image"></a></li>
-                </ul>
             </div>
         </div>
         <!-- Team Section End -->
@@ -503,10 +496,19 @@
                 <div class="counter-card-wrap">
                     <div class="counter-card">
                         <span class="counter-icon">
+                            <i class="flaticon-customer"></i>
+                        </span>
+                        <div class="counter-text">
+                            <span class="counter">15000</span>
+                            <p>Happy Patients</p>
+                        </div>
+                    </div>
+                    <div class="counter-card">
+                        <span class="counter-icon">
                             <i class="flaticon-stethoscope"></i>
                         </span>
                         <div class="counter-text">
-                            <span class="counter">100</span>
+                            <span class="counter">10+</span>
                             <p>Dedicated Doctors</p>
                         </div>
                     </div>
@@ -515,8 +517,8 @@
                             <i class="flaticon-hospital"></i>
                         </span>
                         <div class="counter-text">
-                           <span class="counter">150</span>
-                            <p>Clinic Rooms</p>
+                           <span class="counter">36+</span>
+                            <p>Dental Service</p>
                         </div>
                     </div>
                     <div class="counter-card">
@@ -524,17 +526,8 @@
                             <i class="flaticon-medal"></i>
                         </span>
                         <div class="counter-text">
-                            <span class="counter">250</span>
-                            <p>Awards</p>
-                        </div>
-                    </div>
-                    <div class="counter-card">
-                        <span class="counter-icon">
-                            <i class="flaticon-customer"></i>
-                        </span>
-                        <div class="counter-text">
-                            <span class="counter">1500</span>
-                            <p>Happy Patients</p>
+                            <span class="counter" id="counter-id"></span>
+                            <p>Experience</p>
                         </div>
                     </div>
                 </div>
@@ -559,7 +552,7 @@
                                     </div>
                                     <div class="feature-text">
                                         <h5>Emergency Care</h5>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Coectetu dtok amcor elit ullamco usce egestas equalin tellus.</p>
+                                        <p>We understand that dental emergencies can happen at any time. Our team is dedicated to providing prompt and effective emergency care . </p>
                                     </div>
                                 </div>
                                 <div class="feature-item">
@@ -567,8 +560,8 @@
                                         <i class="flaticon-pills"></i>
                                     </div>
                                     <div class="feature-text">
-                                        <h5>Outdoor Checkup</h5>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Coectetu dtok amcor elit ullamco usce egestas equalin tellus.</p>
+                                        <h5>Friendly Doctors</h5>
+                                        <p>Our team of friendly doctors is committed to making your dental visit a positive experience..</p>
                                     </div>
                                 </div>
                                 <div class="feature-item">
@@ -577,7 +570,7 @@
                                     </div>
                                     <div class="feature-text">
                                         <h5>Operation Theatre</h5>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Coectetu dtok amcor elit ullamco usce egestas equalin tellus.</p>
+                                        <p>Our state-of-the-art operation theatre is equipped with the latest technology to ensure the highest standards of surgical care. </p>
                                     </div>
                                 </div>
                             </div>
@@ -588,14 +581,14 @@
                             <img src="assets/img/about/process-shape.webp" alt="Image" class="process-shape bounce">
                             <div class="promo-box">
                                 <h5>36+</h5>
-                                <span>Established Hospital</span>
+                                <span>Dental Services</span>
                             </div>
                             <div class="trust-box">
                                 Trusted By
                                 <span>2345</span>
                             </div>
-                            <img class="process-img-one" src="assets/img/about/process-img-2.webp" alt="Image">
-                            <img class="process-img-two" src="assets/img/about/process-img-1.webp" alt="Image">
+                            <img class="process-img-one" src="assets/img/about/wh-img-2.jpg" alt="Image">
+                            <img class="process-img-two" src="assets/img/about/wh-img-3.jpg" alt="Image">
                         </div>
                     </div>
                 </div>
@@ -605,7 +598,7 @@
 
         <!-- Footer  Start -->
         <footer class="footer-wrap style-one">
-            <div class="footer-top pb-70">
+            <div style="padding-top: 50px;" class="footer-top pb-70">
                 <img src="assets/img/footer-shape.webp" alt="Image" class="footer-shape">
                 <div class="container">
                     <div class="row">
@@ -678,5 +671,6 @@
         <script src="assets/js/aos.js"></script>
         <script src="assets/js/fslightbox.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/year.js"></script>
     </body>
 </html>
