@@ -5567,3 +5567,14 @@ article {
   background-color: black;
   margin-top: 30px;
 }
+
+/* Gallery */
+
+.gallery-card {
+  padding-bottom: 0px;
+  transition: var(--transition);
+  margin-bottom: 25px;
+}
+.gallery-card:hover{
+  padding: 0px 10px;
+}
