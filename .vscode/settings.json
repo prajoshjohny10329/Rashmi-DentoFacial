@@ -30,9 +30,11 @@
         "pillai",
         "Rashmi",
         "RASHMIS",
+        "Speciality",
         "THULASEEDHARAN",
         "UNNIKRISHNAN",
         "Vallikeezhu",
         "VINAY"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }

@@ -1189,6 +1189,12 @@ select {
 /*--------------------------------------
     Breadcrumb CSS
 ----------------------------------------*/
+.br-01 {
+  background-image: url(../img/breadcrumb/br-1.jpg);
+}
+.br-02 {
+  background-image: url(../img/breadcrumb/br-02.jpg);
+}
 .br-1 {
   background-image: url(../img/breadcrumb/br-1.webp);
 }
